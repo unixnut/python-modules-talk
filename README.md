@@ -24,26 +24,49 @@ thereby making documentation, debugging and maintenance easier.
 
 ## Outline
 
-1. Overview
+1. Introduction
+  1. Background
+  1. Python version disclaimer
+  1. Overview
 1. Features
+  1. import blah
+  1. from fun import Ren, Stimpy
 1. Module Semantics
+  1. Implicit namespaces
   1. sys.path
+  1. $PYTHONPATH
+  1. __name__
   1. `from __future__ import absolute_import`
+    1. `from . import helper`
+    1. `from .xyz import helper as xyz_helper`
 1. Packages
+  1. Submodules
   1. __init__.py
+  1. __main__.py
 1. Module contents
   1. __all__
   1. __path__
-1. 
-1. 
+  1. The dir() Function
 1. Packaging
-  1. Dependencies
-  1. Versioning
+  1. Handles Dependencies and Versioning
+  1. https://packaging.python.org/
+  1. Projects
+    1. Create with help of `setuptools`
+    1. Install locally using `pip`
+  1. PyPI is the online archive, formerly known as cheeseshop
+  1. Source Distributions
+    1. Create using `setuptools`
+    1. Install locally or elsewhere using `pip`
+    1. Publish to PyPI using `twine` (not `setuptools`)
+  1. Package files -- .whl
+    1. Create using `bdist_wheel`
+    1. Publish to PyPI using `twine`
 1. Implications
   1. Microservices
   1. 
 1. 
 2. Gotchas
+  1. Error in import doesn't stop namespace creation
 
 ## Presenter bio
 
